@@ -16,13 +16,24 @@
 </div>
 </div>
 <div>
-<div class="card-div-table-one">
+<div class="card-div-table-one" *ngIf="Showing2">
 <table class="card-table-one">
+<ng-template [ngIf]="Showing5">
+<th><img class="img-card-front" src="{{cards.imageBackCard}}" (click)="toggleShow3()"></th>
+</ng-template>
+<ng-template [ngIf]="Showing5">
+<th><img class="img-card-front" src="{{cards.imageBackCard}}" (click)="toggleShow3()"></th>
+</ng-template>
+<ng-template [ngIf]="Showing5">
+<th><img class="img-card-front" src="{{cards.imageBackCard}}" (click)="toggleShow3()"></th>
+</ng-template>
+<ng-template [ngIf]="Showing5">
+<th><img class="img-card-front" src="{{cards.imageBackCard}}" (click)="toggleShow3()"></th>
+</ng-template>
 <tr>
-<td>TEST<td>
-<td>TEST<td>
-<td>TEST<td>
-<td>TEST<td>
+<ng-template [ngIf]="Showing6">
+<th *ngFor="let card of cards.cards | slice:0:4;"><img class="img-card-front" src="{{cards.imagesUrl}}{{card.image}}" (click)="toggleShow3()"></th>
+</ng-template>
 </tr>
 </table>
 </div>
