@@ -1,0 +1,42 @@
+<main class="main-01" *ngIf="Showing3">
+<div>
+<h1 class="title-cardgame-01" *ngIf="Showing1">CardGame</h1>
+<div class="card-buttom-start-div" *ngIf="Showing1">
+<button mat-raised-button color="primary" (click)="toggleShow1()"><a>start</a></button>
+</div>
+<div class="card-example-back" *ngIf="Showing1">
+<img class="img-card-back-example-01" src="{{cards.imageBackCard}}">
+<img class="img-card-back-example-02" src="{{cards.imageBackCard}}">
+</div>
+<div class="card-buttom-restart-div" *ngIf="Showing2">
+<button mat-raised-button color="primary" (click)="toggleShow1()"><a>restart</a></button>
+</div>
+<div class="card-buttom-allcards-div" *ngIf="Showing1">
+<button mat-raised-button color="primary" (click)="toggleShow2()"><a>AllCards</a></button>
+</div>
+</div>
+<div>
+<div class="card-div-table-one">
+<table class="card-table-one">
+<tr>
+<td>TEST<td>
+<td>TEST<td>
+<td>TEST<td>
+<td>TEST<td>
+</tr>
+</table>
+</div>
+</div>
+</main>
+<main class="main-02" *ngIf="Showing4">
+<div>
+<table class="AllCards-Table">
+<tr *ngFor="let card of cards.cards;">
+<td><img class="img-card-front-example" src="{{cards.imagesUrl}}{{card.image}}"></td>
+</tr>
+</table>
+<div class="card-buttom-allcards-div" *ngIf="Showing1">
+<button mat-raised-button color="primary" (click)="toggleShow2()"><a>back</a></button>
+</div>
+</div>
+</main>
