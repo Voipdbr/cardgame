@@ -1,4 +1,4 @@
-<img src="../images/voip.gif" width="500px"/>
+<img src="./images/voip.gif" width="500px"/>
 
 ---
 
