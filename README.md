@@ -1,27 +1,27 @@
-# Cardgame
+<img src="../images/voip.gif" width="500px"/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
+---
 
-## Development server
+# CardGame
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A aplicação a ser desenvolvida é um jogo de Tarot, permitindo o sorteio de uma carta.
 
-## Code scaffolding
+E as especificações são:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Tela de apresentação exibindo todas as cartas com seu conteúdo visível, e com um botão para iniciar o jogo. ✔
+- Ao clicar no botão, as cartas deverão ser viradas - escondendo o conteúdo - e embaralhadas. ➕➖
+- Permitir que o usuário selecione apenas uma carta, clicando na mesma. ➕➖
+- Apresentar a carta selecionada, o nome da carta e uma descrição. (a descrição pode ser um lorem ipsum) ➕➖
 
-## Build
+OBS: As imagens e nomes das cartas serão listadas na API https://dentalclouddev.s3.amazonaws.com/challenge/tarot.json, esse arquivo deve ser consumido via http request. ✔
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Requisitos
 
-## Running unit tests
+- AngularJS ou Angular ✔
+- Bootstrap ou Material Design ✔
+- SASS ✔
+- Gulp/Grunt/Webpack ✔
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Executar
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Faça a instalação geral com `npm install` e após isso, execute `ng serve` para rodar o servidor dev. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.

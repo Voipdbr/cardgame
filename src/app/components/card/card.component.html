@@ -32,7 +32,7 @@
 </ng-template>
 <tr>
 <ng-template [ngIf]="Showing6">
-<th *ngFor="let card of cards.cards | slice:0:4;"><img class="img-card-front" src="{{cards.imagesUrl}}{{card.image}}" (click)="toggleShow3()"></th>
+<th *ngFor="let card of cards.cards | slice:0:4;"><h1>{{card.name}}</h1><img class="img-card-front" src="{{cards.imagesUrl}}{{card.image}}" (click)="toggleShow3()"><a>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</a></th>
 </ng-template>
 </tr>
 </table>
